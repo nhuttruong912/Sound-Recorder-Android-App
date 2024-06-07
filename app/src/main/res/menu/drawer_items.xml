@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/group1">
+        <item
+            android:id="@+id/record_item"
+            android:icon="@drawable/mic"
+            android:title="Ghi âm" />
+
+        <item
+            android:id="@+id/list_record_item"
+            android:icon="@drawable/list"
+            android:title="Danh sách bản ghi" />
+
+    </group>
+
+    <group android:id="@+id/group2">
+        <item
+            android:id="@+id/schedule_item"
+            android:icon="@drawable/schedule"
+            android:title="Hẹn giờ ghi âm" />
+
+        <item
+            android:id="@+id/statistics_item"
+            android:icon="@drawable/statistics"
+            android:title="Thống kê" />
+    </group>
+
+    <group
+        android:id="@+id/group3">
+        <item
+            android:id="@+id/sharing_item"
+            android:icon="@drawable/baseline_cloud_upload_24"
+            android:title="Upload bản ghi" />
+
+        <item
+            android:id="@+id/download_sharing_item"
+            android:icon="@drawable/cloud_download"
+            android:title="Tải bản ghi được chia sẻ" />
+    </group>
+
+    <group android:id="@+id/group4">
+        <item
+            android:id="@+id/account_item"
+            android:icon="@drawable/account"
+            android:title="Tài khoản" />
+
+        <item
+            android:id="@+id/login_item"
+            android:icon="@drawable/login"
+            android:title="Đăng nhập" />
+
+        <item
+            android:id="@+id/logout_item"
+            android:icon="@drawable/logout"
+            android:title="Đăng xuất" />
+    </group>
+
+</menu>

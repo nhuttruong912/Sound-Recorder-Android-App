@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.AccountFragment">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="#FFEB3B">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/person"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:text="Tài khoản"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:text="Nhập mật khẩu để thực hiện thay đổi" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/changePasswordBtn"
+                android:layout_width="286dp"
+                android:layout_height="wrap_content"
+                android:text="Đổi mật khẩu" />
+
+            <Button
+                android:id="@+id/changePasswordShareBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/changePasswordBtn"
+                android:text="Đổi mật khẩu thư mục chia sẻ" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/changePasswordCover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#8F000000"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="#FFFF"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loại mật khẩu" />
+
+            <EditText
+                android:id="@+id/oldPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhâp mật khẩu cũ" />
+
+            <EditText
+                android:id="@+id/newPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhâp mật khẩu mới" />
+
+            <Button
+                android:id="@+id/registerChangeBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thay đổi" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.LogInDownloadShareFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f44336">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:text="Đăng nhập vào thư mục bạn bè"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp">
+
+        <EditText
+            android:id="@+id/emailEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:hint="Nhập email bạn bè"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/passwordEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailEdt"
+            android:hint="Nhập mật khẩu thư mục"
+            android:inputType="textPassword"
+
+            />
+
+        <LinearLayout
+            android:id="@+id/llSavePassShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passwordEdt"
+            android:layout_marginBottom="60dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkboxShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nhớ mật khẩu" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_log_in_download_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llSavePassShare"
+            android:layout_centerInParent="true"
+            android:text="Đăng nhập" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-files-path
+        name="share_files"
+        path="recordings/"/>
+</paths>
+<!--    /data/data/com.team18.recordapp/files/recordings/recording_1714896067376.aac-->

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ScheduleFragment">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/holo_red_light"
+        android:gravity="center"
+        android:text="Hẹn giờ ghi âm"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TimePicker
+        android:id="@+id/time_picker"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:timePickerMode="spinner"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+
+    <TextView
+        android:id="@+id/tv_record_time"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Thời gian ghi âm:"
+        android:textSize="18sp"
+        android:padding="20dp"
+        app:layout_constraintBottom_toTopOf="@id/tv_selected_time"
+        app:layout_constraintEnd_toStartOf="@id/edt_time_record"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/time_picker" />
+
+    <EditText
+        android:id="@+id/edt_time_record"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Phút"
+        android:inputType="number"
+        android:maxLength="2"
+        android:text="1"
+        android:padding="20dp"
+        app:layout_constraintBottom_toTopOf="@id/tv_selected_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_record_time"
+        app:layout_constraintTop_toBottomOf="@id/time_picker" />
+
+
+    <TextView
+        android:padding="20dp"
+        android:id="@+id/tv_selected_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|start"
+        android:text="Thời gian đã chọn:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_time_record" />
+
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="20dp"
+        android:paddingStart="1dp"
+        android:paddingEnd="1dp"
+        android:text="Xác nhận"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_cancel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_selected_time" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Huỷ cài đặt"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_confirm"
+        app:layout_constraintTop_toBottomOf="@id/tv_selected_time"
+        android:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

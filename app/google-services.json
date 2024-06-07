@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "296089367169",
+    "project_id": "recordapp-6c24a",
+    "storage_bucket": "recordapp-6c24a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:296089367169:android:2a5365741c2b1ef015d380",
+        "android_client_info": {
+          "package_name": "com.team18.recordapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtbEvZ6YMYFqnV_uik7Jy40nYUCPFtGwI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
